@@ -3,43 +3,110 @@
     <img src="./saasfly-logo.svg" width="128" alt="" />
 </div>
 
-# Saasfly </br>
-<a href="https://trendshift.io/repositories/8929" target="_blank"><img src="https://trendshift.io/api/badge/repositories/8929" alt="saasfly%2Fsaasfly | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+# Tesseract
 
-[![GitHub Actions Workflow Status][check-workflow-badge]][check-workflow-badge-link] [![GitHub License][github-license-badge]][github-license-badge-link]  [![Discord][discord-badge]][discord-badge-link] [![Saasfly][made-by-nextify-badge]][made-by-nextify-badge-link]
-[![Chinese](https://img.shields.io/badge/-Chinese-red.svg)](README_zh.md)
-[![German](https://img.shields.io/badge/-German-yellow.svg)](README_de.md)
-[![Vietnamese](https://img.shields.io/badge/-Vietnamese-yellow.svg)](README_vi.md) </br>
-![COMMIT_ACTIVITY](https://img.shields.io/github/commit-activity/m/saasfly/saasfly?style=for-the-badge">)
-[![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fsaasfly%2Fsaasfly&labelColor=%23f47373&countColor=%23263759)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Fsaasfly%2Fsaasfly)
+## Accelerating Fintech Innovation
 
-An easy-to-use and enterprise-grade Next.js boilerplate.
+Tesseract is an open source project aimed at helping new fintech companies launch faster by providing a suite of essential services and tools.
 
-You don't need to buy templates anymore; Saasfly provides a complete, open-source solution for building SaaS applications quickly and easily.
+## Product Overview
 
-> **[Nextify](https://nextify.ltd)** provides a complete Enterprise SaaS solution. Contact us at [contact@nextify.ltd](mailto:contact@nextify.ltd) if you're interested in discussing your project, or if you'd simply like to have a conversation with us, please feel free to reach out.
+### Workspace/File-Storage as a Service
+- Secure cloud storage for sensitive financial documents
+- Version control for important files
+- Collaborative workspaces for team members
+- Integration with popular productivity tools
+- Compliance-ready storage solutions adhering to financial regulations
 
-> ❤️ We provide **free technical support and deployment services to non-profit organizations**.
->
-> 🙌 All profits obtained from our open source projects will be **entirely dedicated to supporting open source initiatives and charitable causes**.
+### Workflows as a Service
+- Customizable workflow templates for common fintech processes
+- Automation of repetitive tasks such as KYC (Know Your Customer) checks
+- Visual workflow builders for non-technical users
+- Integration with external APIs and services
+- Audit trails and logging for regulatory compliance
 
-## ⚡ Live Demo
+### Financial Engine/Provider as a Service
+- Modular architecture for various financial products (loans, investments, insurance)
+- Real-time transaction processing capabilities
+- Integration with major payment gateways and banking systems
+- Sandbox environments for testing financial products
 
-Try it out for yourself!
+### Financial Ledger as a Service
+- Double-entry bookkeeping system
+- Real-time balance sheet and income statement generation
+- Multi-currency support
+- Automated reconciliation tools
+- Audit-ready financial reporting
 
-Demo Server (Location: Washington - USA): <https://show.saasfly.io>
+### Analytics as a Service
+- Comprehensive API suite for financial analytics:
+  - User financial health scoring
+  - Spending pattern analysis
+  - Income stability assessment
+  - Debt-to-income ratio calculations
+  - Savings rate and goal tracking
 
-See more documentation at <https://document.saasfly.io>
+- Real-time data processing:
+  - Up-to-the-12h financial metrics
+  - Instant transaction categorization
+  - Live budget tracking and alerts
 
-## 🌟 Star History
+- Predictive analytics for risk management:
+  - Credit risk scoring models
+  - Default probability predictions
+  - Cash flow forecasting
+  - Investment risk analysis
 
-[![Star History Chart](https://api.star-history.com/svg?repos=saasfly/saasfly&type=Timeline)](https://star-history.com/#saasfly/saasfly&Timeline)
+- Developer-friendly features:
+  - Comprehensive API documentation
+  - SDKs for popular programming languages
+  - Sandbox environment for testing and integration
+
+### Team Management (Social) as a Service
+Our Team Management service provides a robust API suite that enables fintech startups to build powerful, secure, and compliant team collaboration features. This service acts as a specialized social network for financial teams, offering:
+
+
+- Conversation and Interaction APIs:
+  - Real-time messaging endpoints for team discussions
+  - Thread-based conversation management
+  - File sharing and collaborative document editing
+  - Tagging and mention functionality
+  - Reaction and comment systems
+
+- Team Structure and Permissions API:
+  - Dynamic role-based access control management
+  - Team creation and member invitation endpoints
+  - Hierarchical team structure support
+  - Custom permission set creation and assignment
+
+- Task and Workflow Management API:
+  - Task creation, assignment, and tracking
+  - Workflow template management
+  - Progress tracking and reporting
+  - Deadline and reminder systems
+
+- Activity Feeds and Notifications API:
+  - Customizable activity streams for users and teams
+  - Push notification management for mobile and web
+  - Email digest generation for team activities
+
+- Security and Encryption:
+  - End-to-end encryption for all communications
+  - Multi-factor authentication integration
+  - Secure file storage and sharing
+  - Data retention and deletion policies
+
+- Integration Capabilities:
+  - Webhook support for real-time event notifications
+  - OAuth 2.0 for secure authorization
+  - SSO (Single Sign-On) compatibility
+
+- Developer Tools:
+  - Comprehensive API documentation
+  - SDKs for major programming languages
+  - Sandbox environment for testing and integration
 
 ## 🚀 Getting Started
-
-### 🖱 One Click Template
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsaasfly%2Fsaasfly&env=NEXT_PUBLIC_APP_URL,NEXTAUTH_URL,NEXTAUTH_SECRET,STRIPE_API_KEY,STRIPE_WEBHOOK_SECRET,POSTGRES_URL,GITHUB_CLIENT_ID,GITHUB_CLIENT_SECRET,RESEND_API_KEY,RESEND_FROM&install-command=bun%20install&build-command=bun%20run%20build&root-directory=apps%2Fnextjs)
 
 ### 📋 Prerequisites
 
@@ -188,12 +255,6 @@ This project is licensed under the MIT License. For more information, see the [L
 ## 🙏 Credits
 
 This project was inspired by shadcn's [Taxonomy](https://github.com/shadcn-ui/taxonomy) and t3-oss's [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo).
-
-## 👨‍💻 Contributors
-
-<a href="https://github.com/saasfly/saasfly/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=saasfly/saasfly" />
-</a>
 
 Made with [contrib.rocks](https://contrib.rocks).
 
