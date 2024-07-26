@@ -11,7 +11,7 @@
   },
   "scripts": {
     "clean": "git clean -xdf .turbo node_modules",
-    "format": "prettier --check '**/*.{ts,tsx}' ",
+    "format": "prettier --write '**/*.{ts,tsx}'",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -129,6 +129,14 @@
     "./toaster": "./src/toaster.tsx",
     "./typewriter-effect": "./src/typewriter-effect.tsx",
     "./use-toast": "./src/use-toast.tsx",
-    "./wobble-card": "./src/wobble-card.tsx"
+    "./wobble-card": "./src/wobble-card.tsx",
+    "./tooltip": "./src/tooltip.tsx",
+    "./sonner": "./src/sonner.tsx",
+    "./separator": "./src/separator.tsx",
+    "./badge": "./src/badge.tsx",
+    "./progress": "./src/progress.tsx",
+    "./collapsible": "./src/collapsible.tsx",
+    "./textarea": "./src/textarea.tsx",
+    "./stepper": "./src/stepper/index.tsx"
   }
 }
