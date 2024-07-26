@@ -51,3 +51,6 @@ bun.lockb
 .idea/
 
 .env
+
+wrangler.toml
+*/wrangler.toml
