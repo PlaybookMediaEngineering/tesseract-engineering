@@ -1,0 +1,22 @@
+[
+  {
+    "title": "repo",
+    "avatar": "/images/avatars/repo.jpeg",
+    "twitter": "repo",
+    "body": {
+      "raw": "",
+      "code": "var Component=(()=>{var x=Object.create;var o=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var _=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var d=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),l=(t,e)=>{for(var r in e)o(t,r,{get:e[r],enumerable:!0})},i=(t,e,r,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let a of _(e))!j.call(t,a)&&a!==r&&o(t,a,{get:()=>e[a],enumerable:!(s=f(e,a))||s.enumerable});return t};var M=(t,e,r)=>(r=t!=null?x(g(t)):{},i(e||!t||!t.__esModule?o(r,\"default\",{value:t,enumerable:!0}):r,t)),v=t=>i(o({},\"__esModule\",{value:!0}),t);var c=d((F,m)=>{m.exports=_jsx_runtime});var C={};l(C,{default:()=>u,frontmatter:()=>w});var n=M(c()),w={title:\"repo\",twitter:\"repo\",avatar:\"/images/avatars/repo.jpeg\"};function p(t){return(0,n.jsx)(n.Fragment,{})}function u(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,{...t,children:(0,n.jsx)(p,{...t})}):p(t)}return v(C);})();\n;return Component;"
+    },
+    "_id": "authors/nok8s.mdx",
+    "_raw": {
+      "sourceFilePath": "authors/nok8s.mdx",
+      "sourceFileName": "nok8s.mdx",
+      "sourceFileDir": "authors",
+      "contentType": "mdx",
+      "flattenedPath": "authors/nok8s"
+    },
+    "type": "Author",
+    "slug": "/authors/nok8s",
+    "slugAsParams": "nok8s"
+  }
+]
