@@ -18,7 +18,10 @@
   },
   "dependencies": {
     "kysely": "0.27.3",
-    "@vercel/postgres-kysely": "0.8.0"
+    "@vercel/postgres-kysely": "0.8.0",
+    "@neondatabase/serverless": "^0.9.3",
+    "@prisma/adapter-neon": "^5.13.0",
+    "@prisma/client": "^5.12.1"
   },
   "devDependencies": {
     "@saasfly/eslint-config": "workspace:*",
