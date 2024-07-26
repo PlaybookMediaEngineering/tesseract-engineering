@@ -1,6 +1,6 @@
 import type { ColumnType } from "kysely";
 
-import type { Status, SubscriptionPlan } from "./enums";
+import type { NotificationType, Status, SubscriptionPlan } from "./enums";
 
 export type Generated<T> =
   T extends ColumnType<infer S, infer I, infer U>
@@ -9,7 +9,7 @@ export type Generated<T> =
 export type Timestamp = ColumnType<Date, Date | string, Date | string>;
 
 export type Account = {
-  id: Generated<string>;
+  id: string;
   userId: string;
   type: string;
   provider: string;
@@ -21,18 +21,33 @@ export type Account = {
   scope: string | null;
   id_token: string | null;
   session_state: string | null;
+  created_at: Generated<Timestamp>;
+  updated_at: Generated<Timestamp>;
+};
+export type Channel = {
+  id: string;
+  name: string;
+  projectId: string;
+  createdAt: Generated<Timestamp>;
 };
 export type Customer = {
-  id: Generated<number>;
-  authUserId: string;
+  id: string;
+  projectId: string;
+  userId: string;
   name: string | null;
-  plan: SubscriptionPlan | null;
-  stripeCustomerId: string | null;
-  stripeSubscriptionId: string | null;
-  stripePriceId: string | null;
-  stripeCurrentPeriodEnd: Timestamp | null;
+  email: string | null;
   createdAt: Generated<Timestamp>;
-  updatedAt: Generated<Timestamp>;
+};
+export type Event = {
+  id: string;
+  name: string;
+  channelId: string;
+  userId: string;
+  customerId: string | null;
+  icon: string;
+  notify: boolean;
+  tags: unknown;
+  createdAt: Generated<Timestamp>;
 };
 export type K8sClusterConfig = {
   id: Generated<number>;
@@ -46,18 +61,53 @@ export type K8sClusterConfig = {
   status: Generated<Status | null>;
   delete: Generated<boolean | null>;
 };
+export type Metrics = {
+  id: string;
+  projectId: string;
+  logsUsed: Generated<number>;
+  logsLimit: Generated<number>;
+  channelsUsed: Generated<number>;
+  channelsLimit: Generated<number>;
+  seatsUsed: Generated<number>;
+  projectsUsed: Generated<number>;
+};
+export type NotificationSetting = {
+  id: string;
+  userId: string;
+  type: Generated<NotificationType>;
+  details: unknown;
+  enabled: Generated<boolean>;
+  createdAt: Generated<Timestamp>;
+};
+export type Project = {
+  id: string;
+  name: string;
+  userId: string;
+  createdAt: Generated<Timestamp>;
+};
 export type Session = {
-  id: Generated<string>;
+  id: string;
   sessionToken: string;
   userId: string;
   expires: Timestamp;
 };
 export type User = {
-  id: Generated<string>;
+  id: string;
   name: string | null;
   email: string | null;
   emailVerified: Timestamp | null;
+  apiKey: string | null;
+  plan: Generated<string>;
+  credits: Generated<number>;
   image: string | null;
+  language: Generated<string | null>;
+  onboardingEmailSent: Generated<boolean>;
+  created_at: Generated<Timestamp>;
+  updated_at: Generated<Timestamp>;
+  stripe_customer_id: string | null;
+  stripe_subscription_id: string | null;
+  stripe_price_id: string | null;
+  stripe_current_period_end: Timestamp | null;
 };
 export type VerificationToken = {
   identifier: string;
@@ -65,10 +115,15 @@ export type VerificationToken = {
   expires: Timestamp;
 };
 export type DB = {
-  Account: Account;
-  Customer: Customer;
+  accounts: Account;
+  channels: Channel;
+  customers: Customer;
+  events: Event;
   K8sClusterConfig: K8sClusterConfig;
-  Session: Session;
-  User: User;
-  VerificationToken: VerificationToken;
+  metrics: Metrics;
+  notification_settings: NotificationSetting;
+  projects: Project;
+  sessions: Session;
+  users: User;
+  verification_tokens: VerificationToken;
 };

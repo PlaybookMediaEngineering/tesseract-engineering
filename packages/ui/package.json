@@ -137,6 +137,12 @@
     "./progress": "./src/progress.tsx",
     "./collapsible": "./src/collapsible.tsx",
     "./textarea": "./src/textarea.tsx",
-    "./stepper": "./src/stepper/index.tsx"
+    "./stepper/index": "./src/stepper/index.tsx",
+    "./stepper/step": "./src/stepper/step.tsx",
+    "./stepper/vertical-step": "./src/stepper/vertical-step.tsx",
+    "./stepper/step-button-container": "./src/stepper/step-button-container.tsx",
+    "./stepper/step-icon": "./src/stepper/step-icon.tsx",
+    "./stepper/step-label": "./src/stepper/step-label.tsx",
+    "./stepper/use-stepper": "./src/stepper/use-stepper.tsx"
   }
 }
