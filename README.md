@@ -5,9 +5,12 @@
 
 # Tesseract
 
+## 🥺 Project Roadmap
+[Tesseract Roadmap](https://translucent-alder-48f.notion.site/28c09e9e6e4a49a6ad9cf90ab8f37fb5?v=fdc0721f21f240e0b913f59c928a4646)
 ## Accelerating Fintech Innovation
 
 Tesseract is an open source project aimed at helping new fintech companies launch faster by providing a suite of essential services and tools.
+
 
 ## Product Overview
 
@@ -174,10 +177,6 @@ bun run dev:web
 3. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
 4. (Optional alpha)`bun run tailwind-config-viewer` Open [http://localhost:3333](http://localhost:3333) in your browser to see your Tailwind CSS configuration
-
-
-## 🥺 Project Roadmap
-[Tesseract Roadmap](https://translucent-alder-48f.notion.site/28c09e9e6e4a49a6ad9cf90ab8f37fb5?v=fdc0721f21f240e0b913f59c928a4646)
 
 ## ⭐ Features
 
