@@ -101,7 +101,7 @@ export function AllUsersCards({ customerDetails }) {
           <CardContent>
             <div className="flex space-x-4 text-sm text-muted-foreground">
               <div className="flex items-center">
-                <Tag className="mr-1 h-3 w-3 " />
+                <Tag className="mr-1 h-3 w-3" />
                 {customer.userId}
               </div>
               <div className="flex items-center">

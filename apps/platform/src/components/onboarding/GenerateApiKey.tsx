@@ -60,7 +60,7 @@ export default function GenerateApiKey({ apiKey, setApiKey }: Props) {
     >
       <Card
         className={cn(
-          apiKey && "bg-gradient-to-r from-[#073023] via-20% to-transparent ",
+          apiKey && "bg-gradient-to-r from-[#073023] via-20% to-transparent",
         )}
       >
         <CardContent className="p-6">
@@ -86,9 +86,7 @@ export default function GenerateApiKey({ apiKey, setApiKey }: Props) {
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Button
-                    className={cn(
-                      "absolute right-14  top-1/2 -translate-y-1/2",
-                    )}
+                    className={cn("absolute right-14 top-1/2 -translate-y-1/2")}
                     onClick={() => setShowKey((prev) => !prev)}
                     variant="outline"
                   >

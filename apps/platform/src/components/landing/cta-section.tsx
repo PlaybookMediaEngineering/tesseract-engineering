@@ -198,7 +198,7 @@ export default function CallToActionSection() {
                   <ChevronRight className="ml-1 size-4 transition-all duration-300 ease-out group-hover:translate-x-1" />
                 </Link>
               </div>
-              <div className="bg-backtround absolute inset-0 -z-10  rounded-full opacity-40 blur-xl dark:bg-background" />
+              <div className="bg-backtround absolute inset-0 -z-10 rounded-full opacity-40 blur-xl dark:bg-background" />
             </div>
             <div className="to-backtround absolute inset-x-0 bottom-0 h-full bg-gradient-to-b from-transparent to-70% dark:to-background" />
           </div>

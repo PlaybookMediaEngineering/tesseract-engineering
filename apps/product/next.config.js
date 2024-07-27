@@ -2,6 +2,10 @@ import { fileURLToPath } from "url";
 import createJiti from "jiti";
 import { createContentlayerPlugin } from "next-contentlayer";
 
+
+
+
+
 // Import env files to validate at build time. Use jiti so we can load .ts files in here.
 createJiti(fileURLToPath(import.meta.url))("./src/env");
 
@@ -9,6 +13,9 @@ createJiti(fileURLToPath(import.meta.url))("./src/env");
 const config = {
   reactStrictMode: true,
   swcMinify: true,
+  experimental: {
+    serverActions: true,
+  },
   images: {
     remotePatterns: [
       {
