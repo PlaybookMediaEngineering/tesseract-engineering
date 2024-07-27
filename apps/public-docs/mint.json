@@ -1,0 +1,420 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Unkey Docs",
+  "colors": {
+    "primary": "#09090b",
+    "light": "#EAE6E0",
+    "dark": "#18181b",
+    "background": {
+      "light": "#fafaf9",
+      "dark": "#0c0a09"
+    }
+  },
+  "feedback": {
+    "raiseIssue": true,
+    "suggestEdit": true,
+    "thumbsRating": true
+  },
+  "favicon": "/unkey.png",
+  "topbarLinks": [
+    {
+      "name": "Discord",
+      "url": "https://unkey.com/discord"
+    },
+    {
+      "name": "Dashboard",
+      "url": "https://app.unkey.com"
+    }
+  ],
+  "topbarCtaButton": {
+    "type": "github",
+    "url": "https://github.com/unkeyed/unkey"
+  },
+  "tabs": [
+    {
+      "name": "API Reference",
+      "url": "api-reference"
+    },
+    {
+      "name": "SDKs",
+      "url": "libraries"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "Home",
+      "icon": "book-open-cover",
+      "url": "introduction"
+    },
+    {
+      "name": "Blog & Tutorials",
+      "icon": "newspaper",
+      "url": "https://unkey.com/blog"
+    },
+    {
+      "name": "Discord",
+      "icon": "discord",
+      "url": "https://unkey.com/discord"
+    },
+    {
+      "name": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/unkeyed"
+    },
+    {
+      "name": "Contributing",
+      "url": "contributing",
+      "icon": "terminal"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Unkey",
+      "pages": [
+        "introduction",
+        {
+          "group": "Quickstart",
+          "pages": [
+            {
+              "group": "Onboarding",
+              "pages": [
+                "quickstart/onboarding/onboarding-api",
+                "quickstart/onboarding/onboarding-ratelimiting"
+              ]
+            },
+            {
+              "group": "API Keys",
+              "pages": [
+                "quickstart/apis/nextjs",
+                "quickstart/apis/bun",
+                "quickstart/apis/express",
+                "quickstart/apis/hono"
+              ]
+            },
+            {
+              "group": "Ratelimiting",
+              "pages": [
+                "quickstart/ratelimiting/nextjs",
+                "quickstart/ratelimiting/bun",
+                "quickstart/ratelimiting/express",
+                "quickstart/ratelimiting/hono"
+              ]
+            },
+            {
+              "group": "LLMs",
+              "pages": ["quickstart/llms/index"]
+            },
+            {
+              "group": "Identities",
+              "pages": ["quickstart/identities/shared-ratelimits"]
+            }
+          ]
+        },
+        {
+          "group": "Security",
+          "pages": [
+            "security/overview",
+            "security/root-keys",
+            "security/recovering-keys",
+            "apis/features/whitelist",
+            "security/github-scanning"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Concepts",
+      "pages": [
+        {
+          "group": "Identities",
+          "icon": "fingerprint",
+          "pages": ["concepts/identities/overview", "concepts/identities/ratelimits"]
+        }
+      ]
+    },
+    {
+      "group": "Features",
+      "pages": [
+        {
+          "group": "Keys",
+          "pages": [
+            "apis/introduction",
+            {
+              "group": "Features",
+              "pages": [
+                "apis/features/ratelimiting",
+                "apis/features/temp-keys",
+                "apis/features/remaining",
+                "apis/features/refill",
+                "apis/features/analytics",
+                {
+                  "group": "Authorization",
+                  "pages": [
+                    "apis/features/authorization/introduction",
+                    "apis/features/authorization/roles-and-permissions",
+                    "apis/features/authorization/verifying",
+                    "apis/features/authorization/example"
+                  ]
+                },
+                "apis/features/revocation",
+                "apis/features/enabled",
+                "apis/features/environments"
+              ]
+            }
+          ]
+        },
+        {
+          "group": "Ratelimiting",
+          "pages": ["ratelimiting/introduction", "ratelimiting/modes", "ratelimiting/overrides"]
+        },
+        {
+          "group": "Semantic cache",
+          "pages": [
+            "semantic-cache/introduction",
+            "semantic-cache/settings",
+            "semantic-cache/why-semantic-caching"
+          ]
+        },
+        {
+          "group": "Audit logs",
+          "pages": ["audit-log/introduction", "audit-log/types"]
+        }
+      ]
+    },
+    {
+      "group": "Integrations",
+      "icon": "bolt",
+      "pages": ["integrations/vercel"]
+    },
+    {
+      "group": "Migrations",
+      "icon": "plane-arrival",
+      "pages": ["migrations/introduction", "migrations/keys"]
+    },
+    {
+      "group": "API Documentation",
+      "icon": "code",
+      "pages": [
+        "api-reference/overview",
+        "api-reference/authentication",
+        {
+          "group": "Errors",
+          "pages": [
+            "api-reference/errors/introduction",
+            "api-reference/errors/code/BAD_REQUEST",
+            "api-reference/errors/code/UNAUTHORIZED",
+            "api-reference/errors/code/FORBIDDEN",
+            "api-reference/errors/code/NOT_FOUND",
+            "api-reference/errors/code/EXPIRED",
+            "api-reference/errors/code/CONFLICT",
+            "api-reference/errors/code/DISABLED",
+            "api-reference/errors/code/TOO_MANY_REQUESTS",
+            "api-reference/errors/code/INTERNAL_SERVER_ERROR"
+          ]
+        },
+        {
+          "group": "Keys",
+          "pages": [
+            "api-reference/keys/create",
+            "api-reference/keys/verify",
+            "api-reference/keys/get",
+            "api-reference/keys/update",
+            "api-reference/keys/update-remaining",
+            "api-reference/keys/delete",
+            "api-reference/keys/verifications",
+            "api-reference/keys/add-permissions",
+            "api-reference/keys/remove-permissions",
+            "api-reference/keys/set-permissions",
+            "api-reference/keys/add-roles",
+            "api-reference/keys/remove-roles",
+            "api-reference/keys/set-roles"
+          ]
+        },
+        {
+          "group": "APIs",
+          "pages": [
+            "api-reference/apis/create",
+            "api-reference/apis/get",
+            "api-reference/apis/list-keys",
+            "api-reference/apis/delete-keys",
+            "api-reference/apis/delete"
+          ]
+        },
+        {
+          "group": "Permissions",
+          "pages": [
+            "api-reference/permissions/create-role",
+            "api-reference/permissions/get-role",
+            "api-reference/permissions/list-roles",
+            "api-reference/permissions/delete-role",
+            "api-reference/permissions/create-permission",
+            "api-reference/permissions/get-permission",
+            "api-reference/permissions/list-permissions",
+            "api-reference/permissions/delete-permission"
+          ]
+        },
+        {
+          "group": "Identities",
+          "pages": [
+            "api-reference/identities/create-identity",
+            "api-reference/identities/get-identity",
+            "api-reference/identities/list-identities",
+            "api-reference/identities/update-identity",
+            "api-reference/identities/delete-identity"
+          ]
+        },
+        {
+          "group": "Ratelimits",
+          "pages": ["api-reference/ratelimits/limit"]
+        },
+        {
+          "group": "Migrations",
+          "pages": ["api-reference/migrations/create-keys"]
+        }
+      ]
+    },
+    {
+      "group": "Official Libraries",
+      "icon": "code",
+      "pages": [
+        {
+          "group": "@unkey/api",
+          "pages": [
+            "libraries/ts/sdk/overview",
+            {
+              "group": "Keys",
+              "pages": [
+                "libraries/ts/sdk/keys/create",
+                "libraries/ts/sdk/keys/verify",
+                "libraries/ts/sdk/keys/get",
+                "libraries/ts/sdk/keys/update",
+                "libraries/ts/sdk/keys/update-remaining",
+                "libraries/ts/sdk/keys/delete",
+                "libraries/ts/sdk/keys/verifications"
+              ]
+            },
+            {
+              "group": "APIs",
+              "pages": [
+                "libraries/ts/sdk/apis/create",
+                "libraries/ts/sdk/apis/get",
+                "libraries/ts/sdk/apis/list-keys",
+                "libraries/ts/sdk/apis/delete"
+              ]
+            },
+            {
+              "group": "Ratelimits",
+              "pages": ["libraries/ts/sdk/ratelimits/limit"]
+            }
+          ]
+        },
+        "libraries/ts/ratelimit",
+        "libraries/ts/nextjs",
+        "libraries/ts/hono",
+        "libraries/ts/cache/overview",
+        {
+          "group": "unkey-go",
+          "pages": ["libraries/go/overview"]
+        }
+      ]
+    },
+    {
+      "group": "Community Libraries",
+      "pages": [
+        {
+          "group": "Python",
+          "pages": [
+            "libraries/py/overview",
+            {
+              "group": "Services",
+              "pages": ["libraries/py/services/keys", "libraries/py/services/apis"]
+            }
+          ]
+        },
+        {
+          "group": "Elixir",
+          "pages": [
+            "libraries/ex/overview",
+            {
+              "group": "Functions",
+              "pages": [
+                "libraries/ex/functions/create_key",
+                "libraries/ex/functions/verify_key",
+                "libraries/ex/functions/delete_key",
+                "libraries/ex/functions/update_key",
+                "libraries/ex/functions/update_remaining"
+              ]
+            }
+          ]
+        },
+        {
+          "group": "Nuxt",
+          "pages": ["libraries/nuxt/overview"]
+        },
+        {
+          "group": "Rust",
+          "pages": ["libraries/rs/overview"]
+        },
+        {
+          "group": "Springboot",
+          "pages": [
+            "libraries/springboot-java/overview",
+            "libraries/springboot-java/api/get",
+            "libraries/springboot-java/api/list",
+            "libraries/springboot-java/functions/create",
+            "libraries/springboot-java/functions/revoke",
+            "libraries/springboot-java/functions/update",
+            "libraries/springboot-java/functions/verify"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Contributing",
+      "icon": "github",
+      "pages": [
+        "contributing/getting-started",
+        "contributing/versions",
+        "contributing/editor-setup",
+        "contributing/testing",
+        "contributing/sdk-development",
+        {
+          "group": "Services",
+          "pages": [
+            {
+              "group": "Agent",
+              "pages": [
+                "contributing/services/agent/architecture",
+                "contributing/services/agent/configuration",
+                "contributing/services/agent/cluster",
+                "contributing/services/agent/profiling"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footerSocials": {
+    "twitter": "https://twitter.com/unkeydev",
+    "github": "https://github.com/unkeyed/unkey"
+  },
+  "openapi": "https://api.unkey.dev/openapi.json",
+  "api": {
+    "baseUrl": "https://api.unkey.dev"
+  },
+  "redirects": [
+    {
+      "source": "/onboarding",
+      "destination": "/onboarding/onboarding-api"
+    },
+    {
+      "source": "/onboarding/onboarding-api",
+      "destination": "/quickstart/onboarding/onboarding-api"
+    },
+    {
+      "source": "/onboarding/onboarding-ratelimiting",
+      "destination": "/quickstart/onboarding/onboarding-ratelimiting"
+    }
+  ]
+}
