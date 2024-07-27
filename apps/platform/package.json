@@ -75,6 +75,7 @@
     "zustand": "^4.4.5"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.12.1",
     "@saasfly/eslint-config": "workspace:*",
     "@saasfly/prettier-config": "workspace:*",
     "@saasfly/tailwind-config": "workspace:*",
