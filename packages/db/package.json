@@ -27,13 +27,13 @@
     "@saasfly/eslint-config": "workspace:*",
     "@saasfly/prettier-config": "workspace:*",
     "@saasfly/typescript-config": "workspace:*",
-    "dotenv-cli": "7.3.0",
-    "eslint": "8.57.0",
-    "prettier": "3.2.5",
+    "dotenv-cli": "^7.4.1",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.3",
     "prisma": "5.9.1",
     "prisma-kysely": "1.7.1",
     "@types/pg": "8.11.0",
-    "typescript": "5.4.5"
+    "typescript": "^5.5.3"
   },
   "eslintConfig": {
     "root": true,

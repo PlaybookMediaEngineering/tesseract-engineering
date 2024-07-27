@@ -28,8 +28,8 @@
   "devDependencies": {
     "@saasfly/prettier-config": "workspace:*",
     "@saasfly/typescript-config": "workspace:*",
-    "eslint": "8.57.0",
-    "typescript": "5.4.5"
+    "eslint": "^8.57.0",
+    "typescript": "^5.5.3"
   },
   "eslintConfig": {
     "root": true,
