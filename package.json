@@ -39,7 +39,6 @@
   "packageManager": "pnpm@8.7.1",
   "dependencies": {
     "clean": "^4.0.2",
-    "format": "^0.2.2",
-    "next": "^14.2.5"
+    "format": "^0.2.2"
   }
 }
