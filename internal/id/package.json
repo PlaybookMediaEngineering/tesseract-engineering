@@ -11,7 +11,7 @@
     "test": "vitest run -c ./vitest.config.ts"
   },
   "devDependencies": {
-    "@types/node": "^20.14.9",
+    "@types/node": "^20.14.11",
     "@saasfly/typescript-config": "workspace:*",
     "typescript": "^5.5.3",
     "vitest": "^1.6.0"

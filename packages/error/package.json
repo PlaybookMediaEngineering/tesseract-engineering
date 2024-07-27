@@ -8,7 +8,9 @@
   "publishConfig": {
     "access": "public"
   },
-  "files": ["./dist/**"],
+  "files": [
+    "./dist/**"
+  ],
   "description": "",
   "keywords": [],
   "scripts": {
@@ -17,7 +19,7 @@
   "author": "Yoan Yomba",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^20.14.9",
+    "@types/node": "^20.14.11",
     "tsup": "^8.0.2",
     "tsx": "^4.16.2",
     "typescript": "^5.5.3"
