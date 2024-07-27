@@ -3,7 +3,7 @@
     <img src="./saasfly-logo.svg" width="128" alt="" />
 </div>
 
-# Tesseract
+# Tesseract (A Playbook Media Product)
 
 ## 🥺 Project Roadmap
 [Tesseract Roadmap](https://translucent-alder-48f.notion.site/28c09e9e6e4a49a6ad9cf90ab8f37fb5?v=fdc0721f21f240e0b913f59c928a4646)
