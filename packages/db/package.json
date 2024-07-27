@@ -12,7 +12,7 @@
     "lint": "eslint .",
     "format": "prisma format && prettier --check '**/*.{ts,json}' ",
     "db:generate": "prisma generate",
-    "db:push": "bun with-env prisma db push --skip-generate",
+    "db:push": "pnpm with-env prisma db push --skip-generate",
     "typecheck": "tsc --noEmit",
     "with-env": "dotenv -e ../../.env.local --"
   },
