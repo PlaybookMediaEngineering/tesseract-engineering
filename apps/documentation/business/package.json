@@ -1,6 +1,6 @@
 {
-  "name": "@saasfly/internal-docs",
-  "version": "1.0.0",
+  "name": "@saasfly/business",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "dev": "mintlify dev"
@@ -8,6 +8,9 @@
   "keywords": [],
   "author": "Andreas Thomas & James Perkins",
   "devDependencies": {
-    "mintlify": "^4.0.160"
+    "mintlify": "^4.0.182"
+  },
+  "dependencies": {
+    "sharp": "^0.33.4"
   }
 }
