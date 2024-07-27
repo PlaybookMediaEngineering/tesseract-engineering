@@ -54,3 +54,6 @@ bun.lockb
 
 wrangler.toml
 */wrangler.toml
+
+.contentlayer/
+.contentlayer
