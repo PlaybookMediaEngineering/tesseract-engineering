@@ -34,24 +34,24 @@ To develop locally:
 
 ## Installing
 
-Tesseract uses [Corepack](https://nodejs.org/api/corepack.html) and [PNPM](https://pnpm.io/) for package management.
+Tesseract uses [Corepack](https://nodejs.org/api/corepack.html) and [BUN](https://bun.io/) for package management.
 
-To set the correct version of PNPM, run `corepack enable` from the monorepo root. This will set your PNPM
-version correctly. To install the project's dependencies, run `pnpm install`.
+To set the correct version of BUN, run `corepack enable` from the monorepo root. This will set your BUN
+version correctly. To install the project's dependencies, run `bun install`.
 
 ## Building
 
 You can build the project with:
 
 ```bash
-pnpm build
+bun build
 ```
 ## Linting
 
 To check the formatting of your code:
 
 ```sh
-pnpm fmt
+bun fmt
 ```
 
 If you get errors, be sure to fix them before committing.

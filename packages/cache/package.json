@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/unkeyed/unkey#readme",
   "files": ["./dist/**"],
-  "author": "Andreas Thomas <andreas@saasfly.dev>",
+  "author": "Yoan Yomba <andreas@saasfly.dev>",
   "scripts": {
     "build": "tsup",
     "test": "vitest run"

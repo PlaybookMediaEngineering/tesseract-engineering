@@ -1,0 +1,19 @@
+{
+  "name": "@saasfly/logs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": [],
+  "author": "Andreas Thomas",
+  "license": "AGPL-3.0",
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "@saasfly/typescript-config": "workspace:*",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@saasfly/metrics": "workspace:^",
+    "zod": "^3.23.5"
+  }
+}

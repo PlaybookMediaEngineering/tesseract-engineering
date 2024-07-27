@@ -30,7 +30,7 @@ export class TaskDelete extends OpenAPIRoute {
 		},
 	};
 
-	async handle(c) {
+	async handle(_c: any) {
 		// Get validated data
 		const data = await this.getValidatedData<typeof this.schema>();
 

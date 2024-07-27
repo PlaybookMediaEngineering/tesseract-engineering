@@ -34,7 +34,8 @@
   "workspaces": [
     "apps/*",
     "packages/*",
-    "tooling/*"
+    "tooling/*",
+    "internal/*"
   ],
   "packageManager": "bun@v1.1.10",
   "dependencies": {

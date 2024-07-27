@@ -14,7 +14,7 @@
   "scripts": {
     "build": "tsup"
   },
-  "author": "Andreas Thomas",
+  "author": "Yoan Yomba",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.14.9",

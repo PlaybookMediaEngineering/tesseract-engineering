@@ -37,12 +37,12 @@ export class TaskList extends OpenAPIRoute {
 		},
 	};
 
-	async handle(c) {
+	async handle(_c: any) {
 		// Get validated data
-		const data = await this.getValidatedData<typeof this.schema>();
+		// const data = await this.getValidatedData<typeof this.schema>();
 
 		// Retrieve the validated parameters
-		const { page, isCompleted } = data.query;
+		// const { page, isCompleted } = data.query;
 
 		// Implement your own object list here
 
