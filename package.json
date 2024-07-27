@@ -25,7 +25,7 @@
     "prettier": "3.2.5",
     "tailwind-config-viewer": "^2.0.4",
     "turbo": "1.13.3",
-    "typescript": "5.4.5"
+    "typescript": "^5.5.3"
   },
   "engines": {
     "node": ">=18"
@@ -36,5 +36,9 @@
     "packages/*",
     "tooling/*"
   ],
-  "packageManager": "bun@v1.1.10"
+  "packageManager": "bun@v1.1.10",
+  "dependencies": {
+    "clean": "^4.0.2",
+    "format": "^0.2.2"
+  }
 }

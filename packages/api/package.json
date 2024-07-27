@@ -30,10 +30,10 @@
     "@trpc/client": "10.44.1",
     "@trpc/server": "10.44.1",
     "@t3-oss/env-nextjs": "0.8.0",
-    "superjson": "2.2.1",
+    "superjson": "^2.2.1",
     "dinero.js": "2.0.0-alpha.14",
     "@dinero.js/currencies": "2.0.0-alpha.14",
-    "zod": "3.22.4",
+    "zod": "^3.23.5",
     "zod-form-data": "2.0.2"
   },
   "devDependencies": {
@@ -42,7 +42,7 @@
     "@saasfly/typescript-config": "workspace:*",
     "eslint": "8.57.0",
     "prettier": "3.2.5",
-    "typescript": "5.4.5"
+    "typescript": "^5.5.3"
   },
   "eslintConfig": {
     "root": true,
