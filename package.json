@@ -15,7 +15,8 @@
     "typecheck": "turbo typecheck",
     "gen": "turbo gen --config 'turbo/generators/config.ts'",
     "compile-tw-config": "tsc --noEmitOnError tooling/tailwind-config/index.ts --outDir  ./",
-    "tailwind-config-viewer": " tailwind-config-viewer -c ./index.js -o -p 3333"
+    "tailwind-config-viewer": " tailwind-config-viewer -c ./index.js -o -p 3333",
+    "precommit": "pnpm lint && pnpm install --no-frozen-lockfile"
   },
   "devDependencies": {
     "@turbo/gen": "1.13.3",
