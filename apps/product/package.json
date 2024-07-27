@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "bun --verbose next build",
+    "build": "bun --verbose with-env next build",
     "clean": "git clean -xdf .next .turbo node_modules",
     "dev": "bun with-env next dev",
     "format": "prettier --check . --ignore-path ../../.gitignore",
