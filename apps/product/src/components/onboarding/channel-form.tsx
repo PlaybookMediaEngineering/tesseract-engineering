@@ -80,7 +80,7 @@ export function ChannelForm({ setChannelName }: ChannelFormProps) {
         <Card
           className={cn(
             hasChannelCreated &&
-              "bg-gradient-to-r from-[#073023] from-20% via-transparent via-80% to-black to-100% ",
+              "bg-gradient-to-r from-[#073023] from-20% via-transparent via-80% to-black to-100%",
           )}
         >
           <CardHeader>

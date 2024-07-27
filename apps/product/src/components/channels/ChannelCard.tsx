@@ -95,7 +95,7 @@ export function ChannelCard({ channelDetails }) {
           <CardContent>
             <div className="flex space-x-4 text-sm text-muted-foreground">
               <div className="flex items-center">
-                <Tag className="mr-1 h-3 w-3 " />
+                <Tag className="mr-1 h-3 w-3" />
                 Placeholder
               </div>
               <div className="flex items-center">
