@@ -2,11 +2,11 @@
 
 import { useRouter } from "next/navigation";
 import { useSigninModal } from "@/hooks/use-signin-modal";
-import { cn } from "@/lib/utils";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { useSession } from "next-auth/react";
 
 import { Button, buttonVariants } from "@saasfly/ui/button";
+import { cn } from "@saasfly/ui/utils/cn";
 
 export function GetStartedButton() {
   const signInModal = useSigninModal();
