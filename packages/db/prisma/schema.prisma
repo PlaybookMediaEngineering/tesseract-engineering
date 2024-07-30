@@ -1,14 +1,12 @@
 generator client {
-  provider     = "prisma-kysely"
-  output       = "."
-  fileName     = "types.ts"
-  enumFileName = "enums.ts"
+  provider        = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
 }
 
 datasource db {
   provider     = "postgresql"
   url          = env("POSTGRES_URL")
-  relationMode = "prisma"
+  directUrl = env("DATABASE_URL_UNPOOLED")
 }
 
 enum SubscriptionPlan {
@@ -43,6 +41,7 @@ model Customer {
   events    Event[]
 
   @@unique([userId, projectId])
+  @@index([projectId])
   @@map(name: "customers")
 }
 
@@ -128,6 +127,7 @@ model Project {
 
   createdAt DateTime @default(now())
 
+  @@index([userId])
   @@map(name: "projects")
 }
 
@@ -156,6 +156,8 @@ model Event {
   tags       Json
   createdAt  DateTime  @default(now())
 
+  @@index([channelId])
+  @@index([customerId])
   @@map(name: "events")
 }
 
@@ -182,6 +184,7 @@ model NotificationSetting {
   enabled   Boolean          @default(true)
   createdAt DateTime         @default(now())
 
+  @@index([userId])
   @@map(name: "notification_settings")
 }
 

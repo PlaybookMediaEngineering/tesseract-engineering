@@ -3,25 +3,31 @@
   "version": "0.1.0",
   "private": true,
   "exports": {
-    ".": "./index.ts"
+    ".": {
+      "types": "./index.ts",
+      "default": "./index.ts"
+    }
   },
-  "main": "./index.ts",
-  "types": "./index.ts",
-  "scripts": {
-    "clean": "rm -rf .turbo node_modules",
-    "lint": "eslint .",
-    "format": "prisma format && prettier --check '**/*.{ts,json}' ",
-    "db:generate": "prisma generate",
-    "db:push": "pnpm with-env prisma db push --skip-generate",
-    "typecheck": "tsc --noEmit",
-    "with-env": "dotenv -e ../../.env.local --"
-  },
+	"scripts": {
+		"clean": "rm -rf .turbo node_modules",
+		"format": "prettier --check . --ignore-path ../../.gitignore",
+		"lint": "eslint .",
+		"typecheck": "tsc --noEmit --emitDeclarationOnly false",
+		"with-env": "dotenv -e ../../.env --",
+		"db:generate": "bun with-env prisma generate",
+		"db:push": "bun with-env prisma db push --skip-generate",
+		"db:migrate:dev": "bun with-env prisma migrate dev",
+		"db:migrate:reset": "bun with-env prisma migrate reset",
+		"db:migrate:deploy": "bun with-env prisma migrate deploy",
+		"db:studio": "bun with-env prisma studio",
+		"db:force": "bun with-env prisma db push --force-reset",
+		"postinstall": "bun db:generate"
+	},
   "dependencies": {
-    "kysely": "0.27.3",
-    "@vercel/postgres-kysely": "0.8.0",
     "@neondatabase/serverless": "^0.9.3",
     "@prisma/adapter-neon": "^5.13.0",
-    "@prisma/client": "^5.12.1"
+    "@prisma/client": "^5.12.1",
+    "@t3-oss/env-core": "^0.9.2"
   },
   "devDependencies": {
     "@saasfly/eslint-config": "workspace:*",

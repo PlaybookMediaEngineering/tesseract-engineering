@@ -5,7 +5,7 @@
     "build": "turbo build ",
     "clean": "git clean -xdf node_modules",
     "clean:workspaces": "turbo clean",
-    "db:push": "cd ./packages/db/ && pnpm db:push",
+    "db:push": "cd ./packages/db/ && bun db:push",
     "dev": "turbo dev --parallel",
     "dev:web": "turbo dev --parallel --filter !stripe",
     "format": "turbo format --continue -- --cache --cache-location='node_modules/.cache/.prettiercache' --ignore-path='../../.gitignore'",
@@ -16,7 +16,7 @@
     "gen": "turbo gen --config 'turbo/generators/config.ts'",
     "compile-tw-config": "tsc --noEmitOnError tooling/tailwind-config/index.ts --outDir  ./",
     "tailwind-config-viewer": " tailwind-config-viewer -c ./index.js -o -p 3333",
-    "precommit": "pnpm lint && pnpm install --no-frozen-lockfile"
+    "precommit": "bun lint && bun install"
   },
   "devDependencies": {
     "@turbo/gen": "1.13.3",
@@ -36,7 +36,7 @@
     "tooling/*",
     "internal/*"
   ],
-  "packageManager": "pnpm@8.7.1",
+  "packageManager": "bun@1.1.20",
   "dependencies": {
     "clean": "^4.0.2",
     "format": "^0.2.2"

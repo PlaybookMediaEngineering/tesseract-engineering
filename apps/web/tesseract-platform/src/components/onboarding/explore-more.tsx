@@ -1,0 +1,74 @@
+"use client";
+
+import { useRouter } from "next/navigation";
+import { cn } from "@/lib/utils";
+
+import { Button } from "@saasfly/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@saasfly/ui/card";
+import { Separator } from "@saasfly/ui/separator";
+import { useStepper } from "@saasfly/ui/stepper/use-stepper";
+
+// should get the values, for now just handcoded.!
+const exploreConfig = [
+  {
+    title: "Read Docs",
+    description:
+      "Read the documentation to learn more about Tesseract's features",
+    buttonText: "Docs",
+    href: "https://docs.dingify.io/introduction",
+  },
+  {
+    title: "Dashboard",
+    description: "View and manage your events and more from the dashboard",
+    buttonText: "Dashboard",
+    href: "https://www.dingify.io/dashboard",
+  },
+  {
+    title: "Add new channels",
+    description: "Add new channels to your Tesseract account",
+    buttonText: "Add channel",
+    href: "https://www.dingify.io/dashboard",
+  },
+];
+
+export default function ExploreMore() {
+  const router = useRouter();
+  const { activeStep } = useStepper();
+  return (
+    <Card className={cn(activeStep !== 3 && "opacity-65")}>
+      <CardHeader>
+        <CardTitle>Explore more</CardTitle>
+        <CardDescription>
+          Continue unlocking Tesseract's full capabilities and setup
+        </CardDescription>
+      </CardHeader>
+
+      <CardContent>
+        <div className="flex items-center justify-around gap-2">
+          {exploreConfig.map((item) => (
+            <Card className="flex max-w-60 flex-col items-start border-[1px]">
+              <CardHeader>
+                <CardTitle>{item.title}</CardTitle>
+                <CardDescription>{item.description}</CardDescription>
+                <Separator className="my-2" />
+                <Button
+                  onClick={() => router.push(item.href)}
+                  className="mt-2 self-start"
+                  disabled={activeStep !== 3}
+                >
+                  {item.buttonText}
+                </Button>
+              </CardHeader>
+            </Card>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
+  );
+}

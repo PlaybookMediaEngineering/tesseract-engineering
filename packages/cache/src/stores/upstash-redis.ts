@@ -39,7 +39,7 @@ export class UpstashRedisStore<TNamespace extends string, TValue = any>
     entry: Entry<TValue>,
   ): Promise<Result<void, CacheError>> {
     this.redis.set<Entry<TValue>>(this.buildCacheKey(namespace, key), entry, {
-      pxat: entry.staleUntil,
+      px: entry.staleUntil - Date.now(),
     });
     return Ok();
   }
